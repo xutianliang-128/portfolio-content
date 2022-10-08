@@ -45,10 +45,22 @@ a {
 }
 
 h2 {
+  border-bottom: 1px solid rgba(255, 255, 200);
+  color: rgba(255, 255, 200);
+  font-weight: 100;
+  font-size: 22px;
+  line-height: 24px;
+  padding-bottom: 30px;
+  text-align: left;
+  width: 70%;
+  font-family: Georgia;
+}
+
+h3 {
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
   color: rgba(255, 255, 255, 0.5);
   font-weight: 100;
-  font-size: 22px;
+  font-size: 18px;
   line-height: 24px;
   padding-bottom: 30px;
   text-align: left;
@@ -153,17 +165,47 @@ nav a:hover{
   height:auto;
 }
 
-img.showcase{
-  width: 40vw;
-  height:60vh;
-  margin: 0 0 0 4rem;
-  border: 0.5px rgb(0, 229, 255) solid;
+img.main-img {
+  width: 20vw;
+  margin: 2px;
+  border: 1px rgb(0, 229, 255) solid;
   padding: 1px;
+}
+
+img.main-img:hover{
+  padding: 1px;
+  margin: 3px;
+  border: 2px solid yellow;
+  width: 30vw;
+  z-index: 10;
+}
+
+img.showcase{
+  width: 20vw;
+  margin: 2px;
+  border: 1px rgb(0, 229, 255) solid;
+  padding: 1px;
+  max-height: 400px;
 }
 
 img.showcase:hover{
   padding: 1px;
-  margin:2px;
+  margin: 3px;
   border: 2px solid yellow;
-  width: 50%;
+  width: 30vw;
+  z-index: 10;
+  max-height: 450px;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: 20vw 20vw;
+  grid-template-rows: repeat(3, 450px);
+  gap: 12vw;
+  margin-top: 44px;
+  grid-auto-rows: 500px;
+}
+
+figure {
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.5);
 }
