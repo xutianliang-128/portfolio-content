@@ -2,6 +2,11 @@
   width: 100px;
 }
 
+.social-med {
+  display: inline;
+  width: 33%;
+}
+
 body {
   /* Old browsers */
   background: #141E30;
@@ -19,13 +24,11 @@ header {
   position: fixed;
   width: 100%;
   z-index: 10;
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  grid-template-rows: 1fr;
 }
 
 .active {
   color: yellow;
+  text-decoration: underline;
 }
 
 h1 {
@@ -66,20 +69,10 @@ p, figcaption{
 a{
   color: aliceblue;
   line-height: 1.3em;
-  text-align: left;
   width: 100%;
   font-family: Helvetica;
   font-size: 18px;
   font-weight: bold;
-}
-
-.byline {
-  font-family: Helvetica;
-  color: rgba(255, 255, 255, 0.5);
-  float: left;
-  font-size: 14px;
-  padding-left: 10px;
-  text-transform: uppercase;
 }
 
 .caption {
@@ -116,14 +109,28 @@ a{
   width: 50px;
 }
 
-ul {
-  margin: 30px auto;
-  padding: 0 20px;
+nav {
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  background: linear-gradient(90deg, #d67de2, #6ec8e4);
   text-align: justify-all;
 }
 
-nav {
-  text-align: right;
+nav a {
+  text-decoration: none;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  font-size: 18px;
+  color: #FFF;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 300;
+  text-transform: uppercase;
+  display: flex;
+}
+nav a:hover{
+  background-color:burlywood;
 }
 
 .nav_li {
@@ -132,7 +139,7 @@ nav {
   font-size: 16px;
   font-weight: 300;
   text-transform: uppercase;
-  display: inline-block;
+  display: inline-flex;
   padding-left: 10px;
   padding-right: 10px;
 }
@@ -151,4 +158,19 @@ nav {
   margin-top: -40%;
   margin-left:-20%;
   height:auto;
+}
+
+img.showcase{
+  width: 40vw;
+  height:60vh;
+  margin: 0 0 0 4rem;
+  border: 0.5px rgb(0, 229, 255) solid;
+  padding: 1px;
+}
+
+img.showcase:hover{
+  padding: 1px;
+  margin:2px;
+  border: 2px solid yellow;
+  width: 50%;
 }
