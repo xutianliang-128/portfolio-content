@@ -46,7 +46,7 @@ h1 {
   font-size: 2em;
 
   width: 100%;
-  font-family: Georgia;
+  font-family: Georgia, monospace;
   text-align: center;
 }
 
@@ -72,7 +72,7 @@ h3 {
   font-size: 18px;
   line-height: 24px;
   padding-bottom: 30px;
-  font-family: Georgia;
+  font-family: Georgia, monospace;
   text-align: center;
 }
 
@@ -264,7 +264,7 @@ label {
   line-height: 1.3em;
   text-align: center;
   width: 100%;
-  font-family: Helvetica;
+  font-family: Helvetica, monospace;
   font-size: 18px;
   font-weight: bold;
   justify-content: center;
