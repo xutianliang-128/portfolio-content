@@ -62,7 +62,7 @@ h2 {
   line-height: 24px;
   padding-bottom: 30px;
   text-align: center;
-  font-family: Georgia;
+  font-family: 'Space Mono', monospace;
 }
 
 h3 {
@@ -72,7 +72,6 @@ h3 {
   font-size: 18px;
   line-height: 24px;
   padding-bottom: 30px;
-  text-align: left;
   font-family: Georgia;
   text-align: center;
 }
@@ -212,16 +211,6 @@ img.showcase:hover{
   max-height: 450px;
 }
 
-/*.gallery {*/
-/*  display: flex;*/
-/*  flex-direction: column;*/
-/*  grid-template-columns: repeat(3, 1fr);*/
-/*  gap: 12vw;*/
-/*  margin-top: 44px;*/
-/*  justify-content: center;*/
-/*  grid-auto-rows: 500px;*/
-/*}*/
-
 .gallery{
   display: flex;
   flex-direction: column;
@@ -249,7 +238,6 @@ footer{
 header{
   grid-column: 1 / -1 ;
   grid-row: 1 ;
-  width: 100vw;
 }
 main{
   grid-column: 1 / -1 ;
