@@ -10,10 +10,6 @@
 body {
   /* Old browsers */
   display: flex;
-  background: #141E30;
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: -webkit-linear-gradient(-45deg, #35577D, #141E30);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   background: linear-gradient(-45deg, #35577D, #141E30);
   margin: 0;
   padding: 0;
@@ -35,6 +31,13 @@ header {
 main {
   padding-top: 200px;
 }
+
+main.dy {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 6vh;
+}
+
 
 .active {
   color: yellow;
@@ -176,7 +179,7 @@ nav a:hover{
 }
 
 img.main-img {
-  width: 20vw;
+  width: 80vw;
   margin: 2px;
   border: 1px rgb(0, 229, 255) solid;
   padding: 1px;
@@ -190,7 +193,7 @@ img.main-img:hover{
   padding: 1px;
   margin: 3px;
   border: 2px solid yellow;
-  width: 30vw;
+  width: 100vw;
   z-index: 10;
 }
 
@@ -214,7 +217,6 @@ img.showcase:hover{
 .gallery{
   display: flex;
   flex-direction: column;
-  grid-template-columns: repeat(3, 1fr);
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
@@ -233,6 +235,7 @@ figure {
 footer{
     background-image: url(../images/sea.jpeg);
     height: 10vh;
+    color: aliceblue;
 }
 
 header{
@@ -275,9 +278,15 @@ button {
   align-self: center;
 }
 
-
-
 @media only screen and (min-width:500px) {
+
+    main.dy {
+        grid-template-columns: 1fr 1fr;
+      }
+
+}
+
+@media only screen and (min-width:800px) {
 
 	.gallery{
 		flex-direction: row;
@@ -289,6 +298,20 @@ button {
     nav {
       flex-direction: row;
     }
+
+    main.dy {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    img.main-img {
+        width: 20vw;
+    }
+
+
+    img.main-img:hover{
+        width: 30vw;
+    }
+
 }
 
 @keyframes fadeIn {
