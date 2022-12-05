@@ -79,6 +79,10 @@ h3 {
   text-align: center;
 }
 
+.skip {
+  color: white;
+}
+
 p, figcaption{
   color: aliceblue;
   line-height: 1.3em;
